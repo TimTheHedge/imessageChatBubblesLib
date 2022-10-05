@@ -1,0 +1,116 @@
+@import "_reset.scss";
+@import "_fonts.scss";
+
+$fontSize: 30px;
+
+:root{
+    --margin-bottom-massage: .75em; //margin bottom every message
+
+    --send-bg-color: #0B93F6;
+    --send-text-color: white;
+    --receive-bg: #E5E5EA;
+    --receive-text-color: #171717;
+    --page-bg-color: white;
+}
+
+
+.chat-bubbles{
+    &__position{
+        max-width: calc(450px * 1.5);
+        margin: 50px auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    line-height: 1.1em;
+    font-size: $fontSize;
+}
+
+
+// Общие стили для сообщений. General styles for messages.
+.message{
+    max-width: 75%;
+    word-wrap: break-word;
+    padding: 0.4em 0.75em;
+    border-radius: 0.83em;   //calc(25px * 1.5); 37,5px
+
+    position: relative;
+
+    margin-bottom: var(--margin-bottom-massage);
+
+    &::after, &::before{
+        content: "";
+		position: absolute;
+        bottom: 0;
+        height: .83em;
+    }
+}
+// Общие стили для сообщений. General styles for messages. End!
+
+
+// Класс для <p> отправленного сообщения. Class for <p> send message. 
+.send{  
+    align-self: flex-end;
+    background-color: var(--send-bg-color);
+    color: var(--send-text-color);
+    z-index: 0;
+
+    &::before{ //Нижний слой с телом хвоста (цвет сообщения).
+        right: -7px;
+        width: 20px;
+        background-color: var(--send-bg-color);
+		border-bottom-left-radius: 16px 14px;
+        z-index: -2;
+    }
+
+    &::after{ // Верхний слой для вырезания хвоста (цвет фона).
+        right: -26px;
+        width: 26px;
+        height: .9em;
+        background-color: var(--page-bg-color);
+		border-bottom-left-radius: 10px 10px;
+        z-index: -1;
+    }
+    
+}
+// Класс для <p> отправленного сообщения. Class for <p> send message. End!
+
+
+// Класс для <p> полученного сообщения. Class for <p> receive message.
+.receive{
+    align-self: flex-start;
+    background-color: var(--receive-bg);
+    color: var(--receive-text-color);
+
+    &:before {
+		left: -7px;
+        width: 20px;
+        background-color: var(--receive-bg);
+		border-bottom-right-radius: 16px 14px;
+	}
+
+	&:after {
+		left: -26px;
+        width: 26px;
+        background-color: var(--page-bg-color);
+		border-bottom-right-radius: 10px;
+	}
+}
+// Класс для <p> полученного сообщения. Class for <p> receive message. End!
+
+
+.send-small{  
+    &::before{ //Нижний слой с телом хвоста (цвет сообщения).
+        right: -10px;
+    }
+}
+
+.receive-small{
+    &:before {
+		left: -10px;
+	}
+}

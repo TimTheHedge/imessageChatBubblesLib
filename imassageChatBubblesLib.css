@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("fonts/SFProDisplay-Regular.eot");
+  src: local("fonts/SF Pro Display Regular"), local("fonts/SFProDisplay-Regular"), url("fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SFProDisplay-Regular.woff2") format("woff2"), url("fonts/SFProDisplay-Regular.woff") format("woff"), url("fonts/SFProDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --margin-bottom-massage: .75em;
+  --send-bg-color: #0B93F6;
+  --send-text-color: white;
+  --receive-bg: #E5E5EA;
+  --receive-text-color: #171717;
+  --page-bg-color: white;
+}
+
+.chat-bubbles {
+  font-family: "SF Pro Display";
+  font-weight: normal;
+  line-height: 1.1em;
+  font-size: 30px;
+}
+.chat-bubbles__position {
+  max-width: 675px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message {
+  max-width: 75%;
+  word-wrap: break-word;
+  padding: 0.4em 0.75em;
+  border-radius: 0.83em;
+  position: relative;
+  margin-bottom: var(--margin-bottom-massage);
+}
+.message::after, .message::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.83em;
+}
+
+.send {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: var(--send-bg-color);
+  color: var(--send-text-color);
+  z-index: 0;
+}
+.send::before {
+  right: -7px;
+  width: 20px;
+  background-color: var(--send-bg-color);
+  border-bottom-left-radius: 16px 14px;
+  z-index: -2;
+}
+.send::after {
+  right: -26px;
+  width: 26px;
+  height: 0.9em;
+  background-color: var(--page-bg-color);
+  border-bottom-left-radius: 10px 10px;
+  z-index: -1;
+}
+
+.receive {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: var(--receive-bg);
+  color: var(--receive-text-color);
+}
+.receive:before {
+  left: -7px;
+  width: 20px;
+  background-color: var(--receive-bg);
+  border-bottom-right-radius: 16px 14px;
+}
+.receive:after {
+  left: -26px;
+  width: 26px;
+  background-color: var(--page-bg-color);
+  border-bottom-right-radius: 10px;
+}
+
+.send-small::before {
+  right: -10px;
+}
+
+.receive-small:before {
+  left: -10px;
+}

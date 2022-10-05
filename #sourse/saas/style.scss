@@ -13,26 +13,8 @@ $fontSize: 30px;
     --page-bg-color: white;
 }
 
-
-.chat-bubbles{
-    &__position{
-        max-width: calc(450px * 1.5);
-        margin: 50px auto;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    font-family: 'SF Pro Display';
-    font-weight: normal;
-    line-height: 1.1em;
-    font-size: $fontSize;
-}
-
-
 // Общие стили для сообщений. General styles for messages.
-.message{
+.send, .receive{
     max-width: 75%;
     word-wrap: break-word;
     padding: 0.4em 0.75em;
@@ -41,6 +23,10 @@ $fontSize: 30px;
     position: relative;
 
     margin-bottom: var(--margin-bottom-massage);
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    line-height: 1.1em;
+    font-size: $fontSize;
 
     &::after, &::before{
         content: "";
@@ -48,6 +34,8 @@ $fontSize: 30px;
         bottom: 0;
         height: .83em;
     }
+
+    
 }
 // Общие стили для сообщений. General styles for messages. End!
 
@@ -75,6 +63,8 @@ $fontSize: 30px;
 		border-bottom-left-radius: 10px 10px;
         z-index: -1;
     }
+
+    
     
 }
 // Класс для <p> отправленного сообщения. Class for <p> send message. End!
@@ -99,6 +89,8 @@ $fontSize: 30px;
         background-color: var(--page-bg-color);
 		border-bottom-right-radius: 10px;
 	}
+
+    
 }
 // Класс для <p> полученного сообщения. Class for <p> receive message. End!
 

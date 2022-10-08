@@ -86,7 +86,8 @@ h1, h2, h3, h4, h5, h6 {
   --page-bg-color: white;
 }
 
-.send, .receive {
+
+.i-send, .i-receive {
   max-width: 75%;
   word-wrap: break-word;
   padding: 0.4em 0.75em;
@@ -98,28 +99,31 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1em;
   font-size: 30px;
 }
-.send::after, .send::before, .receive::after, .receive::before {
+
+.i-send::after, .i-send::before, .i-receive::after, .i-receive::before {
   content: "";
   position: absolute;
   bottom: 0;
   height: 0.83em;
 }
 
-.send {
+.i-send {
   -ms-flex-item-align: end;
       align-self: flex-end;
   background-color: var(--send-bg-color);
   color: var(--send-text-color);
   z-index: 0;
 }
-.send::before {
+
+.i-send::before {
   right: -7px;
   width: 20px;
   background-color: var(--send-bg-color);
   border-bottom-left-radius: 16px 14px;
   z-index: -2;
 }
-.send::after {
+
+.i-send::after {
   right: -26px;
   width: 26px;
   height: 0.9em;
@@ -128,29 +132,33 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
-.receive {
+
+.i-receive {
   -ms-flex-item-align: start;
       align-self: flex-start;
   background-color: var(--receive-bg);
   color: var(--receive-text-color);
 }
-.receive:before {
+
+.i-receive:before {
   left: -7px;
   width: 20px;
   background-color: var(--receive-bg);
   border-bottom-right-radius: 16px 14px;
 }
-.receive:after {
+
+.i-receive:after {
   left: -26px;
   width: 26px;
   background-color: var(--page-bg-color);
   border-bottom-right-radius: 10px;
 }
 
-.send-small::before {
+
+.i-send-small::before {
   right: -10px;
 }
 
-.receive-small:before {
+.i-receive-small:before {
   left: -10px;
 }

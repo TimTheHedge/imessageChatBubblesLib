@@ -1,4 +1,4 @@
-var messageElementSend = document.querySelector(".send");
+var messageElementSend = document.querySelector(".i-send");
 var messageElementReceive = document.querySelector(".receive");
 
 var messageFontSizeStrSend = window.getComputedStyle(messageElementSend).fontSize;

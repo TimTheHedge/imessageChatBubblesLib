@@ -72,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../../fonts/SFProDisplay-Regular.eot");
-  src: local("../../fonts/SF Pro Display Regular"), local("../../fonts/SFProDisplay-Regular"), url("../../fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../../fonts/SFProDisplay-Regular.woff") format("woff"), url("../../fonts/SFProDisplay-Regular.ttf") format("truetype");
+  src: url("fonts/SFProDisplay-Regular.eot");
+  src: local("fonts/SF Pro Display Regular"), local("fonts/SFProDisplay-Regular"), url("fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SFProDisplay-Regular.woff2") format("woff2"), url("fonts/SFProDisplay-Regular.woff") format("woff"), url("fonts/SFProDisplay-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -160,5 +160,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .i-receive-small:before {
-  left: -10px;
+  left: -11px;
 }

@@ -1,5 +1,5 @@
 var messageElementSend = document.querySelector(".i-send");
-var messageElementReceive = document.querySelector(".receive");
+var messageElementReceive = document.querySelector(".i-receive");
 
 var messageFontSizeStrSend = window.getComputedStyle(messageElementSend).fontSize;
 var messageFontSizeStrReceive = window.getComputedStyle(messageElementReceive).fontSize;
@@ -14,10 +14,10 @@ var messageFontSizeReceive = Number(messageFontSizeStrReceive.slice(0, indexPxRe
 document.addEventListener("DOMContentLoaded", function() {
 
     if (messageFontSizeSend <= 14 || messageFontSizeReceive <= 14){
-        sendElement = document.querySelector(".send");
-        sendElement.classList.toggle("send-small");
-        receiveElement = document.querySelector(".receive");
-        receiveElement.classList.toggle("receive-small");
+        sendElement = document.querySelector(".i-send");
+        sendElement.classList.toggle("i-send-small");
+        receiveElement = document.querySelector(".i-receive");
+        receiveElement.classList.toggle("i-receive-small");
     }
 
 })

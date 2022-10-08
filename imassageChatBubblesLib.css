@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   --page-bg-color: white;
 }
 
+
 .i-send, .i-receive {
   max-width: 75%;
   word-wrap: break-word;
@@ -98,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1em;
   font-size: 30px;
 }
+
 .i-send::after, .i-send::before, .i-receive::after, .i-receive::before {
   content: "";
   position: absolute;
@@ -112,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--send-text-color);
   z-index: 0;
 }
+
 .i-send::before {
   right: -7px;
   width: 20px;
@@ -119,6 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 16px 14px;
   z-index: -2;
 }
+
 .i-send::after {
   right: -26px;
   width: 26px;
@@ -128,24 +132,28 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
+
 .i-receive {
   -ms-flex-item-align: start;
       align-self: flex-start;
   background-color: var(--receive-bg);
   color: var(--receive-text-color);
 }
+
 .i-receive:before {
   left: -7px;
   width: 20px;
   background-color: var(--receive-bg);
   border-bottom-right-radius: 16px 14px;
 }
+
 .i-receive:after {
   left: -26px;
   width: 26px;
   background-color: var(--page-bg-color);
   border-bottom-right-radius: 10px;
 }
+
 
 .i-send-small::before {
   right: -10px;

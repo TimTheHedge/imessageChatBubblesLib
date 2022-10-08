@@ -14,7 +14,7 @@ $fontSize: 30px;
 }
 
 // Общие стили для сообщений. General styles for messages.
-.send, .receive{
+.i-send, .i-receive{
     max-width: 75%;
     word-wrap: break-word;
     padding: 0.4em 0.75em;
@@ -41,7 +41,7 @@ $fontSize: 30px;
 
 
 // Класс для <p> отправленного сообщения. Class for <p> send message. 
-.send{  
+.i-send{  
     align-self: flex-end;
     background-color: var(--send-bg-color);
     color: var(--send-text-color);
@@ -71,7 +71,7 @@ $fontSize: 30px;
 
 
 // Класс для <p> полученного сообщения. Class for <p> receive message.
-.receive{
+.i-receive{
     align-self: flex-start;
     background-color: var(--receive-bg);
     color: var(--receive-text-color);
@@ -95,13 +95,13 @@ $fontSize: 30px;
 // Класс для <p> полученного сообщения. Class for <p> receive message. End!
 
 
-.send-small{  
+.i-send-small{  
     &::before{ //Нижний слой с телом хвоста (цвет сообщения).
         right: -10px;
     }
 }
 
-.receive-small{
+.i-receive-small{
     &:before {
 		left: -10px;
 	}

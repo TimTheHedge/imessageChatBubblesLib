@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   --receive-text-color: #171717;
   --page-bg-color: white;
   --message-max-width: 75%;
+  --font-size: 30px;
 }
 
 
@@ -98,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "SF Pro Display";
   font-weight: normal;
   line-height: 1.1em;
-  font-size: 30px;
+  font-size: var(--font-size);
 }
 
 .i-send::after, .i-send::before, .i-receive::after, .i-receive::before {

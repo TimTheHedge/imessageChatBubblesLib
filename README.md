@@ -61,6 +61,7 @@ A simple BEM library to create an adaptive message effect like in imassage on yo
     --send-text-color: white; /* Sent message text color / Цвет текста отправленного сообщения */
     --receive-bg: #E5E5EA; /* Recived message background color / Цвет фона полученного сообщения */
     --receive-text-color: #171717; /* Recived message text color / Цвет текста полученного сообщения */
+    --message-max-width: 75%; /* Max message width / Максимальная ширина сообщения */
     --page-bg-color: white; ❗️❗️ /* Page color, it is very important to specify the exact color. The correct display of effects depends on this. / Цвет страницы, очень важно указать точный цвет. От этого зависит правильное отображение эффектов. */ ❗️❗️
 }
 ```

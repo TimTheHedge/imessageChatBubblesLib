@@ -84,11 +84,12 @@ h1, h2, h3, h4, h5, h6 {
   --receive-bg-color: #E5E5EA;
   --receive-text-color: #171717;
   --page-bg-color: white;
+  --message-max-width: 75%;
 }
 
 
 .i-send, .i-receive {
-  max-width: 75%;
+  max-width: var(--message-max-width);
   word-wrap: break-word;
   padding: 0.4em 0.75em;
   border-radius: 0.83em;

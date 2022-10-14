@@ -13,7 +13,7 @@ var messageFontSizeReceive = Number(messageFontSizeStrReceive.slice(0, indexPxRe
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    if (messageFontSizeSend <= 14 || messageFontSizeReceive <= 14){
+    if (messageFontSizeSend <= 16 || messageFontSizeReceive <= 16){
         sendElement = document.querySelector(".i-send");
         sendElement.classList.toggle("i-send-small");
         receiveElement = document.querySelector(".i-receive");
